@@ -87,8 +87,38 @@ python manage.py runserver
 
 # Примеры запросов API в Postman
 
-Получить токен по адресу: http://127.0.0.1:8000/api/v1/api-token-auth/
+Получить токен по (POST) запросу: http://127.0.0.1:8000/api/v1/api-token-auth/
 
 Для получения токена надо ввести username и password (которые вы ранее создали для суперпользователя)
 
-![Токен](images/Снимок экрана 2024-05-30 210358+.png)
+<img width="1000px" src="https://github.com/Vettel12/api_yatube-master/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-05-30%20210358+.png?raw=true" align="center" alt="GitHub Readme Stats" />
+
+Получить спискок публикаций (GET): http://127.0.0.1:8000/api/v1/posts/
+
+Ввести в Authorization наш token e233213*****
+
+<img width="1000px" src="https://github.com/Vettel12/api_yatube-master/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-05-30%20214854+.png?raw=true" align="center" alt="GitHub Readme Stats" />
+
+Создать публикацию (GET): http://127.0.0.1:8000/api/v1/posts/
+
+Ввести text и в Value наш текст поста
+
+<img width="1000px" src="https://github.com/Vettel12/api_yatube-master/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-05-30%20214936.png?raw=true" align="center" alt="GitHub Readme Stats" />
+
+Обновление публикации (PUT): http://127.0.0.1:8000/api/v1/posts/1/
+
+Ввести text и в Value новый текст
+
+<img width="1000px" src="https://github.com/Vettel12/api_yatube-master/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-05-30%20220142.png?raw=true" align="center" alt="GitHub Readme Stats" />
+
+Удалить пост (ранее создали их три) (DELETE): http://127.0.0.1:8000/api/v1/posts/3/
+
+<img width="1000px" src="https://github.com/Vettel12/api_yatube-master/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-05-30%20220502.png?raw=true" align="center" alt="GitHub Readme Stats" />
+
+Создать комментарий к посту (POST): http://127.0.0.1:8000/api/v1/posts/1/comments/
+
+Ввести post и в Value его id
+
+Ввести text и в Value значение
+
+<img width="1000px" src="https://github.com/Vettel12/api_yatube-master/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-05-30%20215844.png?raw=true" align="center" alt="GitHub Readme Stats" />
