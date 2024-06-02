@@ -12,6 +12,12 @@ cd /B/TEST_PROJECT
 git clone https://github.com/Vettel12/api_yatube-master
 ```
 
+Заходим в директорию проекта:
+
+```bash
+cd /api_yatube-master
+```
+
 Устанавливаем виртуальное окружение:
 
 ```bash
